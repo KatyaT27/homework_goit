@@ -106,3 +106,18 @@ folder_path = input("Введіть шлях до каталогу для сор
 
 # Сортуємо файли
 sort_files(folder_path)
+
+def main():
+    # Шлях до каталогу для сортування
+    folder_path = sys.argv[1]
+
+    # Сортуємо файли
+    sort_files(folder_path)
+
+
+if __name__ == '__main__':
+    main()
+тоді 
+entry_points={
+        'console_scripts': [
+            'clean-folder = clean_folder.clean:main'
